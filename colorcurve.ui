@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ColorCurve</class>
+ <widget class="QDialog" name="ColorCurve">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>416</width>
+    <height>328</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>曲线</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Image.qrc">
+    <normaloff>:/icon/color/Image/stock-color-curves.png</normaloff>:/icon/color/Image/stock-color-curves.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>通道：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <item>
+        <property name="text">
+         <string>明度</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Image.qrc">
+          <normaloff>:/icon/Image/stock-channel.png</normaloff>:/icon/Image/stock-channel.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>红色</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Image.qrc">
+          <normaloff>:/icon/Image/stock-channel-red.png</normaloff>:/icon/Image/stock-channel-red.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>绿色</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Image.qrc">
+          <normaloff>:/icon/Image/stock-channel-green.png</normaloff>:/icon/Image/stock-channel-green.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>蓝色</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Image.qrc">
+          <normaloff>:/icon/Image/stock-channel-blue.png</normaloff>:/icon/Image/stock-channel-blue.png</iconset>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_reset_channel">
+       <property name="text">
+        <string>重置通道</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_position">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="CurveEditor" name="curve" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButton_reset">
+       <property name="text">
+        <string>重置</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_OK">
+       <property name="text">
+        <string>确定</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_cancel">
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CurveEditor</class>
+   <extends>QWidget</extends>
+   <header>curveeditor.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="Image.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_OK</sender>
+   <signal>clicked()</signal>
+   <receiver>ColorCurve</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>304</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>230</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>ColorCurve</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>340</x>
+     <y>306</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>367</x>
+     <y>289</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

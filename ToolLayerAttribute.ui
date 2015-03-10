@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ToolLayerAttribute</class>
+ <widget class="QDialog" name="ToolLayerAttribute">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>316</width>
+    <height>216</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>图层属性</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>常规</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>名称：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_name"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_visible">
+        <property name="text">
+         <string>可见</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>混合</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>模式：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_mode">
+          <property name="baseSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QComboBox QAbstractItemView::item{
+    height:22px;
+}</string>
+          </property>
+          <property name="maxVisibleItems">
+           <number>30</number>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>正常</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Dissolve">溶解</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Draken">变暗</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Multiply">正片叠底</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Color_Burn">颜色加深</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Linear_Burn">线性加深</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Lighten">变亮</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Screen">滤色</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Color_Dodge">颜色减淡</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Lnear_Dodge">线性减淡</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Overlay">叠加</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Soft_Lighten">柔光</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Strong_Lighten">强光</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Vivid_Lighten">亮光</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Linear_Lighten">线性光</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Pin_Lighten">点光</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Hard_Mix">实色混合</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Difference">差值</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Exclusion">排除</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Subtract">减去</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Divide">划分</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Hue">色相</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Saturation">饱和度</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Color">颜色</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string extracomment="Luminosity">亮度</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>不透明度：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="spinBox_Transparent">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="value">
+           <number>255</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="horizontalSlider_Transparent">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="value">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_OK">
+       <property name="text">
+        <string>确定</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_cancel">
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>spinBox_Transparent</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider_Transparent</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>108</x>
+     <y>150</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>163</x>
+     <y>148</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_Transparent</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_Transparent</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>191</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>128</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_OK</sender>
+   <signal>clicked()</signal>
+   <receiver>ToolLayerAttribute</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>175</x>
+     <y>188</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>137</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>ToolLayerAttribute</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>255</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>310</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

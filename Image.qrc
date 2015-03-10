@@ -1,0 +1,73 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>Image/stock-channel.png</file>
+        <file>Image/stock-channel-blue.png</file>
+        <file>Image/stock-channel-green.png</file>
+        <file>Image/stock-channel-red.png</file>
+        <file>Image/stock-histogram.png</file>
+    </qresource>
+    <qresource prefix="/icon/edit">
+        <file>Image/stock-edit-redo.png</file>
+        <file>Image/stock-edit-undo.png</file>
+        <file>Image/stock-edit-undo-history.png</file>
+        <file>Image/undo-history-redo.png</file>
+        <file>Image/undo-history-undo.png</file>
+    </qresource>
+    <qresource prefix="/icon/transform">
+        <file>Image/stock-trans-flip-horizontal.png</file>
+        <file>Image/stock-trans-flip-vertical.png</file>
+        <file>Image/stock-trans-perspective.png</file>
+        <file>Image/stock-trans-rotate.png</file>
+        <file>Image/stock-trans-rotate-90.png</file>
+        <file>Image/stock-trans-rotate-180.png</file>
+        <file>Image/stock-trans-rotate-270.png</file>
+        <file>Image/stock-trans-rotate-zoom.png</file>
+    </qresource>
+    <qresource prefix="/icon/color">
+        <file>Image/stock-color-brightness-contrast.png</file>
+        <file>Image/stock-color-color-balance.png</file>
+        <file>Image/stock-color-colorize.png</file>
+        <file>Image/stock-color-desaturate.png</file>
+        <file>Image/stock-color-invert.png</file>
+        <file>Image/stock-color-levels.png</file>
+        <file>Image/stock-color-posterize.png</file>
+        <file>Image/stock-color-threshold.png</file>
+        <file>Image/stock-color-curves.png</file>
+        <file>Image/stock-color-picker-black.png</file>
+        <file>Image/stock-color-picker-gray.png</file>
+        <file>Image/stock-color-picker-white.png</file>
+        <file>Image/stock-color-hue-saturation.png</file>
+    </qresource>
+    <qresource prefix="/icon/start">
+        <file>Image/stock-start-close.png</file>
+        <file>Image/stock-start-exit.png</file>
+        <file>Image/stock-start-open.png</file>
+        <file>Image/stock-start-save.png</file>
+        <file>Image/stock-start-clear.png</file>
+        <file>Image/stock-start-save-as.png</file>
+        <file>Image/stock-start-reset.png</file>
+    </qresource>
+    <qresource prefix="/icon/tools">
+        <file>Image/stock-tool-ellipse-select.png</file>
+        <file>Image/stock-tool-free-select.png</file>
+        <file>Image/stock-tool-rect-select.png</file>
+        <file>Image/stock-tool-browse.png</file>
+    </qresource>
+    <qresource prefix="/icon/status">
+        <file>Image/stock-status-zoom-out.png</file>
+        <file>Image/stock-status-adjust.png</file>
+        <file>Image/stock-status-zoom-in.png</file>
+    </qresource>
+    <qresource prefix="/Texture">
+        <file>Image/Texture/tex_canvas.png</file>
+    </qresource>
+    <qresource prefix="/layer">
+        <file>Image/layer-add.png</file>
+        <file>Image/layer-copy.png</file>
+        <file>Image/layer-down.png</file>
+        <file>Image/layer-merge.png</file>
+        <file>Image/layer-remove.png</file>
+        <file>Image/layer-up.png</file>
+        <file>Image/layer-attribute.png</file>
+    </qresource>
+</RCC>
